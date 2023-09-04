@@ -1,4 +1,4 @@
-# How to create Hyperlink Column in MAUI DataGrid?
+# How to create hyperlink column in MAUI DataGrid?
 The [.NET MAUI DataGrid(SfDataGrid)](https://www.syncfusion.com/maui-controls/maui-datagrid) does not natively provide HyperlinkColumn support. You can achieve this by using [DataGridTemplateColumn](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridTemplateColumn.html) and a customized label. 
 
 ## XAML
@@ -11,11 +11,11 @@ Define your DataGrid with the required customizations. Use a DataGridTemplateCol
     <syncfusion:SfDataGrid.Columns>
         <syncfusion:DataGridTextColumn MappingName="Control"/>
         <syncfusion:DataGridTextColumn MappingName="Platform"/>
-        <syncfusion:DataGridTemplateColumn MappingName="UgLink">
+        <syncfusion:DataGridTemplateColumn MappingName="UGLink">
             <syncfusion:DataGridTemplateColumn.CellTemplate>
                 <DataTemplate>
                     <local:HyperlinkLabel Text="User Guide documentation"
-                                        Ur="{Binding UgLink}"
+                                        Url="{Binding UGLink}"
                                         VerticalTextAlignment="Center"/>
                 </DataTemplate>
             </syncfusion:DataGridTemplateColumn.CellTemplate>

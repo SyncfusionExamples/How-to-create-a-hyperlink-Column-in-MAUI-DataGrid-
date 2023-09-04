@@ -24,7 +24,7 @@ namespace SfDataGridSample
             set { this.platform = value; }
         }
 
-        public string UgLink
+        public string UGLink
         {
             get { return ugLink; }
             set { this.ugLink = value; }
@@ -34,7 +34,7 @@ namespace SfDataGridSample
         {
             this.Control = control;
             this.Platform = platform;
-            this.UgLink = ugLink;
+            this.UGLink = ugLink;
         }
     }
 }
