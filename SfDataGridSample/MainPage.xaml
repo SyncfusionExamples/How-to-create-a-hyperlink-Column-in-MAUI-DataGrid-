@@ -16,11 +16,11 @@
     <syncfusion:SfDataGrid.Columns>
         <syncfusion:DataGridTextColumn MappingName="Control"/>
         <syncfusion:DataGridTextColumn MappingName="Platform"/>
-        <syncfusion:DataGridTemplateColumn MappingName="UgLink">
+        <syncfusion:DataGridTemplateColumn MappingName="UGLink">
             <syncfusion:DataGridTemplateColumn.CellTemplate>
                 <DataTemplate>
                     <local:HyperlinkLabel Text="User Guide documentation"
-                                        Url="{Binding UgLink}"
+                                        Url="{Binding UGLink}"
                                         VerticalTextAlignment="Center"/>
                 </DataTemplate>
             </syncfusion:DataGridTemplateColumn.CellTemplate>
